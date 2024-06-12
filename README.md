@@ -10,6 +10,9 @@ Prebuilt opencore EFI for macos
 - LAN: Realtek® GbE LAN chip
 - RAM: 32GB DDR4
 
+# Supported Version of macos
+- [MacOS Sonoma (tested)]()
+
 # Settings up
 - change to `Kernel -> Patch` the number of core [more info here](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#patch-2)
 ![Screenshot](./Images/amd.png)
@@ -20,10 +23,15 @@ Prebuilt opencore EFI for macos
 [Please follow opencore guide for setup the bios!](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#amd-bios-settings)
 
 # What's work
-/
+- Internet
+- Sounds
+- GPU
+
+# What's doesn't work
+- Cannot run VM due to the cpu
 
 # Some screenshots
-/
+![Screenshot](./Images/info.png)
 
 # Credits
 [Dortania](https://dortania.github.io/OpenCore-Install-Guide/) - Made the OpenCore guide
