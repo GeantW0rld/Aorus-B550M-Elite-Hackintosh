@@ -11,7 +11,8 @@ Prebuilt opencore EFI for macos
 - RAM: 32GB DDR4
 
 # Supported Version of macos
-- [MacOS Sonoma (tested)]()
+- [MacOS Sonoma (tested)](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/tree/main/Sonoma)
+- No support for MacOS ventura/Monterey/Big sur because not tested, create PR for update about they version
 
 # Settings up
 - change to `Kernel -> Patch` the number of core [more info here](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#patch-2)
@@ -32,6 +33,9 @@ Prebuilt opencore EFI for macos
 
 # Some screenshots
 ![Screenshot](./Images/info.png)
+
+# Download
+Go to release or download the repo zip file
 
 # Credits
 [Dortania](https://dortania.github.io/OpenCore-Install-Guide/) - Made the OpenCore guide
