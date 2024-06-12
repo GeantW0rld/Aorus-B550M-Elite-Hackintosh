@@ -28,6 +28,7 @@ Prebuilt opencore EFI for macos
 - Internet
 - Sounds
 - GPU
+- Bluetooth
 
 # What's doesn't work
 - Cannot run VM due to the cpu
