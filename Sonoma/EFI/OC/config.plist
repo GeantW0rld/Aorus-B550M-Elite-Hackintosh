@@ -1309,7 +1309,7 @@
                 <key>PickerMode</key>
                 <string>External</string>
                 <key>PickerVariant</key>
-                <string>Auto</string>
+                <string>Acidanthera\Syrah</string>
                 <key>PollAppleHotKeys</key>
                 <false/>
                 <key>ShowPicker</key>
@@ -1317,7 +1317,7 @@
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
-                <integer>5</integer>
+                <integer>0</integer>
             </dict>
             <key>Debug</key>
             <dict>
@@ -1336,7 +1336,7 @@
                 <key>SysReport</key>
                 <false/>
                 <key>Target</key>
-                <integer>67</integer>
+                <integer>0</integer>
             </dict>
             <key>Entries</key>
             <array>
@@ -1450,7 +1450,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>-v -wegnoigpu debug=0x100 alcid=11 agdpmod=pikera keepsyms=1</string>
+                    <string>-wegnoigpu debug=0x100 alcid=11 agdpmod=pikera keepsyms=1</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1521,13 +1521,13 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>F5K051200CDK3F71F</string>
+                <string>/</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>1537</integer>
                 <key>ROM</key>
-                <data>ESIzRFVm</data>
+                <data></data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
@@ -1535,9 +1535,9 @@
                 <key>SystemProductName</key>
                 <string>MacPro7,1</string>
                 <key>SystemSerialNumber</key>
-                <string>F5KDVPYJP7QM</string>
+                <string>/</string>
                 <key>SystemUUID</key>
-                <string>2E097C6A-06A0-4C4A-95CD-4066A4EC5C78</string>
+                <string>/</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
