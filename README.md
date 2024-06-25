@@ -10,6 +10,8 @@ Prebuilt opencore EFI for macos
 - Audio codec: ALC887
 - LAN: Realtek® GbE LAN chip
 - RAM: 32GB DDR4
+- Chipset: AMD B550
+- Motherboard: Aorus B550M Elite
 
 # Supported Version of macos
 - [MacOS Sonoma (tested)](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/tree/main/Sonoma)
