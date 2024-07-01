@@ -21,7 +21,7 @@ Prebuilt opencore EFI for macos
 - change to `Kernel -> Patch` the number of core [more info here](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#patch-2)
 ![Screenshot](./Images/amd.png)
 
-- change SMBIOS to a valid SMBIOS
+- change SMBIOS (recommended to choose IMacPro1,1)
 
 # Bios Settings
 [Please follow opencore guide for setup the bios!](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#amd-bios-settings)
@@ -31,6 +31,7 @@ Prebuilt opencore EFI for macos
 - Sounds
 - GPU
 - Bluetooth
+- Iservices (IMessage, Icloud, etc..)
 
 # What's doesn't work
 - Cannot run VM due to the cpu
