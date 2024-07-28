@@ -5,8 +5,7 @@ Prebuilt opencore EFI for macos
 # Desktop specs
 - CPU: AMD Ryzen 5 5600G
 - GPU: AMD Radeon RX 6600
-- Wifi: Not installed on this build
-- Bluetooth: Cambridge Silicon Radio Ltd. (USB Bluetooth)
+- Wifi: Intel AC 8260 (PCIe)
 - Audio codec: ALC887
 - LAN: Realtek® GbE LAN chip
 - RAM: 32GB DDR4
