@@ -1,6 +1,9 @@
 # Aorus-B550M-Elite-Hackintosh
- 
+
 Prebuilt opencore EFI for macos
+
+# Notes
+I'm testing macos Sequoia, the efi will be published soon
 
 # Desktop specs
 - CPU: AMD Ryzen 5 5600G
