@@ -20,15 +20,15 @@ Prebuilt opencore EFI for macos
 | MacOS version       | Link                                        |
 | ------------------- | ------------------------------------------- |
 | Tahoe 26            |  [EFI](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/tree/main/Tahoe)  |
-| Sequoia 15          |  Tahoe EFI should work for Sequoia                 |
+| Sequoia 15          |  Tahoe EFI should work for Sequoia<sup>1</sup>                 |
 | Sonoma 14           |  [EFI](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/tree/main/Sonoma) |
 | Ventura 13          |  SHOULD WORK* (Use Sonoma efi)              |
 | Monterey 12         |  SHOULD WORK* (Use Sonoma efi)              |
 | Big Sur 11          |  SHOULD WORK* (Use Sonoma efi)              |
 
 
-*You can try it, but I won't be responsible if your system crashes or anything else happens.
-
+*You can try it, but I won't be responsible if your system crashes or anything else happens.<br>
+<sup>1</sup> Should activate Whatevergreen
 # Configurations
 You should use [ProperTree](https://github.com/corpnewt/ProperTree) as PLIST Editor or code-oriented text editor, OC Config. and OCAT : They do not always respect OpenCore's schema, They make changes without informing you, and auto-save these changes when opening your config, baking them in and They have no kext load order logic
 
