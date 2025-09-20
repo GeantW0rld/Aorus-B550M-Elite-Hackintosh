@@ -27,6 +27,8 @@ Prebuilt opencore EFI for macos
 | Big Sur 11          |  Not supported by this EFI                 |
 
 # Configurations
+You should use [ProperTree](https://github.com/corpnewt/ProperTree) as PLIST Editor or code§oriented text editor, OC Config. and OCAT : They do not always respect OpenCore's schema, They make changes without informing you, and auto-save these changes when opening your config, baking them in and They have no kext load order logic
+
 - change to `Kernel -> Patch` the number of core [more info here](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#patch-2)
 ![Screenshot](./Images/amd.png)
 
