@@ -79,7 +79,6 @@ For example, a user with a 6-core processor should use these `Replace` values: `
 - Ethernet
 - Sounds*
 - GPU
-- Bluetooth
 - Iservices (IMessage, Icloud, etc..)
 
 * It doesn't work on MacOS 26 Tahoe due to removal of AppleHDA (can be fixed [here](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh?tab=readme-ov-file#how-to-fix-audio-on-tahoe))
