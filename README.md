@@ -21,13 +21,13 @@ Prebuilt opencore EFI for macos
 | ------------------- | ------------------------------------------- |
 | Tahoe 26            |  Soon                 |
 | Sequoia 15          |  Soon                 |
-| Sonoma 14           |  [EFI](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/tree/main/Sonoma)                |
+| Sonoma 14           |  [EFI](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/tree/main/Sonoma) |
 | Ventura 13          |  Not supported by this EFI                 |
 | Monterey 12         |  Not supported by this EFI                 |
 | Big Sur 11          |  Not supported by this EFI                 |
 
 # Configurations
-You should use [ProperTree](https://github.com/corpnewt/ProperTree) as PLIST Editor or code§oriented text editor, OC Config. and OCAT : They do not always respect OpenCore's schema, They make changes without informing you, and auto-save these changes when opening your config, baking them in and They have no kext load order logic
+You should use [ProperTree](https://github.com/corpnewt/ProperTree) as PLIST Editor or code-oriented text editor, OC Config. and OCAT : They do not always respect OpenCore's schema, They make changes without informing you, and auto-save these changes when opening your config, baking them in and They have no kext load order logic
 
 - change to `Kernel -> Patch` the number of core [more info here](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#patch-2)
 ![Screenshot](./Images/amd.png)
@@ -44,9 +44,9 @@ You should use [ProperTree](https://github.com/corpnewt/ProperTree) as PLIST Edi
 | Above 4G Decoding            |  Enabled<sup>1</sup>                 |
 | Resizable BAR Support           |  Enabled<sup>2</sup>                  |
 | SATA Mode           |  AHCI                  |
-| OS Type          |  Windows 10<sup>3</sup>                  |
+| OS Type          |  Windows 10/UEFI<sup>3</sup>                  |
 
-- <sup>1</sup> if you can't find the option then add `npci=0x3000` to boot-args
+- <sup>1</sup> if you can't find the option then add `npci=0x3000` or `npci=0x2000` to boot-args
 - <sup>2</sup> When enabling Above 4G, Resizable BAR Support can be enabled Please ensure that Booter -> Quirks -> ResizeAppleGpuBars is set to 0 if this is enabled.
 - <sup>3</sup> some motherboards may require "Other OS" instead
 
