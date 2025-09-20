@@ -10,7 +10,7 @@ Prebuilt opencore EFI for macos
 | CPU                 | AMD Ryzen 5 5600G                           |
 | Memory              | 32GB Ram (4x8GB) Corsair Vengences DDR4     |
 | SSD                 | Emtec 250GB SDD                             |
-| Integrated Graphics | AMD Radeon RX Vega 7 (disabled)             |
+| Integrated GrÒaphics | AMD Radeon RX Vega 7 (disabled)             |
 | GPU                 | AMD Radeon RX 6600 8GB                      |
 | Sound Card          | ALC887                                      |
 | Wireless Card       | /                                           |
@@ -19,12 +19,13 @@ Prebuilt opencore EFI for macos
 # Supported Version of macos
 | MacOS version       | Link                                        |
 | ------------------- | ------------------------------------------- |
-| Tahoe 26            |  Soon                 |
-| Sequoia 15          |  Soon                 |
+| Tahoe 26            |  [EFI](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/tree/main/Tahoe)  |
+| Sequoia 15          |  Tahoe EFI should work for Sequoia                 |
 | Sonoma 14           |  [EFI](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/tree/main/Sonoma) |
-| Ventura 13          |  Not supported by this EFI                 |
-| Monterey 12         |  Not supported by this EFI                 |
-| Big Sur 11          |  Not supported by this EFI                 |
+| Ventura 13          |  SHOULD WORK* (Use Sonoma efi)              |
+| Monterey 12         |  SHOULD WORK* (Use Sonoma efi)              |
+| Big Sur 11          |  SHOULD WORK* (Use Sonoma efi)              |
+*You can try it, but I won't be responsible if your system crashes or anything else happens.
 
 # Configurations
 You should use [ProperTree](https://github.com/corpnewt/ProperTree) as PLIST Editor or code-oriented text editor, OC Config. and OCAT : They do not always respect OpenCore's schema, They make changes without informing you, and auto-save these changes when opening your config, baking them in and They have no kext load order logic
@@ -54,7 +55,7 @@ You should use [ProperTree](https://github.com/corpnewt/ProperTree) as PLIST Edi
 For example, a user with a 6-core processor should use these `Replace` values: `B8 06 0000 0000` / `BA 06 0000 0000` / `BA 06 0000 0090` / `BA 06 0000 00`
 
 
-- change SMBIOS with [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) (use MacPro7,1 or IMacPro1,1)
+- change SMBIOS with [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and [replace it](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#platforminfo) (use MacPro7,1 or IMacPro1,1)
 
 # Bios Settings
 | settings            | Option                                      |
