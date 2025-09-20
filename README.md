@@ -25,6 +25,8 @@ Prebuilt opencore EFI for macos
 | Ventura 13          |  SHOULD WORK* (Use Sonoma efi)              |
 | Monterey 12         |  SHOULD WORK* (Use Sonoma efi)              |
 | Big Sur 11          |  SHOULD WORK* (Use Sonoma efi)              |
+
+
 *You can try it, but I won't be responsible if your system crashes or anything else happens.
 
 # Configurations
