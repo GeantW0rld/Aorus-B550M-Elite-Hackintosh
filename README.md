@@ -106,6 +106,7 @@ sudo cp -r VoodooHDA.kext /Library/Extensions/
 
 # Some screenshots
 ![Screenshot](./Images/info.png)
+![Screenshot](./Images/Tahoe.png)
 
 # Download
 Go to release or download the repo zip file
