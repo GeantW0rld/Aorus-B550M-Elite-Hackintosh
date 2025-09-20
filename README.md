@@ -2,34 +2,54 @@
 
 Prebuilt opencore EFI for macos
 
-# Notes
-I'm testing macos Sequoia, the efi will be published soon
+## Specifications
 
-# Desktop specs
-- CPU: AMD Ryzen 5 5600G
-- GPU: AMD Radeon RX 6600
-- Wifi: Intel AC 8260 (PCIe)
-- Audio codec: ALC887
-- LAN: Realtek® GbE LAN chip
-- RAM: 32GB DDR4
-- Chipset: AMD B550
-- Motherboard: Aorus B550M Elite
+| Specifications      | Detail                                      |
+| ------------------- | ------------------------------------------- |
+| Motherboard         | Gigabyte Aorus B500M Elite                  |
+| CPU                 | AMD Ryzen 5 5600G                           |
+| Memory              | 32GB Ram (4x8GB) Corsair Vengences DDR4     |
+| SSD                 | Emtec 250GB SDD                             |
+| Integrated Graphics | AMD Radeon RX Vega 7 (disabled)             |
+| GPU                 | AMD Radeon RX 6600 8GB                      |
+| Sound Card          | ALC887                                      |
+| Wireless Card       | /                                           |
+| Ethernet/LAN        | Realtek® GbE LAN chip                       |
 
 # Supported Version of macos
-- [MacOS Sonoma (tested)](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/tree/main/Sonoma)
-- No support for MacOS ventura/Monterey/Big sur because not tested, create PR for update about they version
+| MacOS version       | Link                                        |
+| ------------------- | ------------------------------------------- |
+| Tahoe 26            |  Soon                 |
+| Sequoia 15          |  Soon                 |
+| Sonoma 14           |  [EFI](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/tree/main/Sonoma)                |
+| Ventura 13          |  Not supported by this EFI                 |
+| Monterey 12         |  Not supported by this EFI                 |
+| Big Sur 11          |  Not supported by this EFI                 |
 
-# Settings up
+# Configurations
 - change to `Kernel -> Patch` the number of core [more info here](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#patch-2)
 ![Screenshot](./Images/amd.png)
 
-- change SMBIOS (recommended to choose IMacPro1,1)
+- change SMBIOS (recommended to choose IMacPro1,1 or MacPro7,1)
 
 # Bios Settings
-[Please follow opencore guide for setup the bios!](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#amd-bios-settings)
+| settings            | Option                                      |
+| ------------------- | ------------------------------------------- |
+| Fastboot            |  Disabled                 |
+| Secure Boot            |  Disabled                 |
+| IOMMU            |  Disabled                 |
+| CSM            |  Disabled                 |
+| Above 4G Decoding            |  Enabled<sup>1</sup>                 |
+| Resizable BAR Support           |  Enabled<sup>2</sup>                  |
+| SATA Mode           |  AHCI                  |
+| OS Type          |  Windows 10<sup>3</sup>                  |
+
+<sup>1</sup> if you can't find the option then add `npci=0x3000` to boot-args
+<sup>2</sup> When enabling Above4G, Resizable BAR Support can be enabled Please ensure that Booter -> Quirks -> ResizeAppleGpuBars is set to 0 if this is enabled.
+<sup>3</sup> some motherboards may require "Other OS" instead
 
 # What's work
-- Internet
+- Ethernet
 - Sounds
 - GPU
 - Bluetooth
