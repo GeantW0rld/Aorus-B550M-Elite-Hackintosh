@@ -82,10 +82,27 @@ For example, a user with a 6-core processor should use these `Replace` values: `
 - Bluetooth
 - Iservices (IMessage, Icloud, etc..)
 
-* It doesn't work on MacOS 26 Tahoe due to removal of AppleHDA
+* It doesn't work on MacOS 26 Tahoe due to removal of AppleHDA (can be [fixed](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/README.md#))
 
 # What's doesn't work
 - Cannot run VM due to the cpu
+
+# How to fix Audio on Tahoe
+- download [VoodooHDA](https://github.com/CloverHackyColor/VoodooHDA/releases/tag/Release302) (VoodooHDA.kext-302.zip and VoodooHDA.prefPane.zip)
+- extract both zip files
+- open terminal and go to where you downloaded the files
+- in the terminal type
+```bash
+sudo xattr -cr VoodooHDA.kext
+
+sudo spctl --master-disable
+
+sudo cp -r VoodooHDA.kext /Library/Extensions/
+```
+- after allow loading VoodooHDA in the system settings
+- finally reboot
+- then install VoodooHDA.prefPane
+- allow extension then you have sounds :DÒ
 
 # Some screenshots
 ![Screenshot](./Images/info.png)
