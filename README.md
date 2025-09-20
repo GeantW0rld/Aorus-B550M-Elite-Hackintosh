@@ -46,9 +46,9 @@ You should use [ProperTree](https://github.com/corpnewt/ProperTree) as PLIST Edi
 | SATA Mode           |  AHCI                  |
 | OS Type          |  Windows 10<sup>3</sup>                  |
 
-<sup>1</sup> if you can't find the option then add `npci=0x3000` to boot-args
-<sup>2</sup> When enabling Above4G, Resizable BAR Support can be enabled Please ensure that Booter -> Quirks -> ResizeAppleGpuBars is set to 0 if this is enabled.
-<sup>3</sup> some motherboards may require "Other OS" instead
+- <sup>1</sup> if you can't find the option then add `npci=0x3000` to boot-args
+- <sup>2</sup> When enabling Above4G, Resizable BAR Support can be enabled Please ensure that Booter -> Quirks -> ResizeAppleGpuBars is set to 0 if this is enabled.
+- <sup>3</sup> some motherboards may require "Other OS" instead
 
 # What's work
 - Ethernet
