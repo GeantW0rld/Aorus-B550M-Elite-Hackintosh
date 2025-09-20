@@ -29,10 +29,32 @@ Prebuilt opencore EFI for macos
 # Configurations
 You should use [ProperTree](https://github.com/corpnewt/ProperTree) as PLIST Editor or code-oriented text editor, OC Config. and OCAT : They do not always respect OpenCore's schema, They make changes without informing you, and auto-save these changes when opening your config, baking them in and They have no kext load order logic
 
-- change to `Kernel -> Patch` the number of core [more info here](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#patch-2)
-![Screenshot](./Images/amd.png)
+- change to `Kernel -> Patch` the number of core (source: [AMD_Vanilla](https://github.com/AMD-OSX/AMD_Vanilla/blob/beta/README.md))
 
-- change SMBIOS (recommended to choose IMacPro1,1 or MacPro7,1)
+|   macOS Version      | Replace Value | New Value |
+|----------------------|---------------|-----------|
+| 10.13.x, 10.14.x     | B8000000 0000 | B8 < Core Count > 0000 0000 |
+| 10.15.x, 11.x        | BA000000 0000 | BA < Core Count > 0000 0000 |
+| 12.x, 13.0 to 13.2.1 | BA000000 0090 | BA < Core Count > 0000 0090 |
+| 13.3 +               |  BA000000 00  | BA < Core Count > 0000 00 |
+
+  - The Core Count patch needs to be modified to boot your system. Find the four `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.<br>From the table above substitue `< Core Count >` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count. See the table below for the values matching your CPU core count.
+
+
+| Core Count | Hexadecimal |
+|------------|-------------|
+|   4 Core   |     `04`    |
+|   6 Core   |     `06`    |
+|   8 Core   |     `08`    |
+|   12 Core  |     `0C`    |
+|   16 Core  |     `10`    |
+|   24 Core  |     `18`    |
+|   32 Core  |     `20`    |
+
+For example, a user with a 6-core processor should use these `Replace` values: `B8 06 0000 0000` / `BA 06 0000 0000` / `BA 06 0000 0090` / `BA 06 0000 00`
+
+
+- change SMBIOS with [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) (use MacPro7,1 or IMacPro1,1)
 
 # Bios Settings
 | settings            | Option                                      |
@@ -52,10 +74,12 @@ You should use [ProperTree](https://github.com/corpnewt/ProperTree) as PLIST Edi
 
 # What's work
 - Ethernet
-- Sounds
+- Sounds*
 - GPU
 - Bluetooth
 - Iservices (IMessage, Icloud, etc..)
+
+* It doesn't work on MacOS 26 Tahoe due to removal of AppleHDA
 
 # What's doesn't work
 - Cannot run VM due to the cpu
