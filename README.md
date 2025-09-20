@@ -82,7 +82,7 @@ For example, a user with a 6-core processor should use these `Replace` values: `
 - Bluetooth
 - Iservices (IMessage, Icloud, etc..)
 
-* It doesn't work on MacOS 26 Tahoe due to removal of AppleHDA (can be [fixed](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh/README.md#))
+* It doesn't work on MacOS 26 Tahoe due to removal of AppleHDA (can be fixed [here](https://github.com/GeantW0rld/Aorus-B550M-Elite-Hackintosh?tab=readme-ov-file#how-to-fix-audio-on-tahoe))
 
 # What's doesn't work
 - Cannot run VM due to the cpu
